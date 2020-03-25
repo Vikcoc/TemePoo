@@ -1,0 +1,56 @@
+# depslib dependency file v1.0
+1583868912 source:d:\new folder\faculta\poo lab\tema1\main.cpp
+	<iostream>
+	"Stiva_de_caractere.h"
+
+1583869690 source:d:\new folder\faculta\poo lab\tema1\src\stiva_de_caractere.cpp
+	"Stiva_de_caractere.h"
+	<vector>
+
+1583869174 d:\new folder\faculta\poo lab\tema1\include\stiva_de_caractere.h
+	"Nod.h"
+	<iostream>
+
+1583576578 d:\new folder\faculta\poo lab\tema1\include\nod.h
+
+1583576578 source:d:\new folder\faculta\poo lab\tema1\src\nod.cpp
+	"Nod.h"
+	<iostream>
+
+1584369619 source:d:\faculta\sem2\poo lab\tema1\src\nod.cpp
+	"Nod.h"
+	<iostream>
+
+1584369609 d:\faculta\sem2\poo lab\tema1\include\nod.h
+
+1584375952 source:d:\faculta\sem2\poo lab\tema1\src\stiva_de_caractere.cpp
+	"Stiva_de_caractere.h"
+	<vector>
+
+1584375952 d:\faculta\sem2\poo lab\tema1\include\stiva_de_caractere.h
+	"Nod.h"
+	<iostream>
+
+1584375965 source:d:\faculta\sem2\poo lab\tema1\main.cpp
+	<iostream>
+	"Stiva_de_caractere.h"
+
+1584369619 source:d:\faculta\sem2\poolab\tema1\proj1\src\nod.cpp
+	"Nod.h"
+	<iostream>
+
+1584369609 d:\faculta\sem2\poolab\tema1\proj1\include\nod.h
+
+1585153549 source:d:\faculta\sem2\poolab\tema1\proj1\src\stiva_de_caractere.cpp
+	"Stiva_de_caractere.h"
+	<vector>
+
+1585144377 d:\faculta\sem2\poolab\tema1\proj1\include\stiva_de_caractere.h
+	"Nod.h"
+	<iostream>
+
+1585153638 source:d:\faculta\sem2\poolab\tema1\proj1\main.cpp
+	<iostream>
+	"Stiva_de_caractere.h"
+	<vector>
+
