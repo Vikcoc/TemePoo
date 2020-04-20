@@ -1,0 +1,65 @@
+# depslib dependency file v1.0
+1587317001 source:d:\faculta\sem2\poolabteme\tema2\tema2\main.cpp
+	<iostream>
+	<typeinfo>
+	"Liniuta.h"
+	"Matrice.h"
+	"Lista.h"
+	"Graf.h"
+	"Graf_Neorientat.h"
+	"Graf_Orientat.h"
+	"PesteLimite.h"
+
+1587309035 d:\faculta\sem2\poolabteme\tema2\tema2\include\liniuta.h
+	<fstream>
+
+1587310168 d:\faculta\sem2\poolabteme\tema2\tema2\include\matrice.h
+	"Liniuta.h"
+	<fstream>
+
+1587309815 d:\faculta\sem2\poolabteme\tema2\tema2\include\lista.h
+	"Liniuta.h"
+	<fstream>
+
+1587314941 d:\faculta\sem2\poolabteme\tema2\tema2\include\graf.h
+	"Liniuta.h"
+	<fstream>
+
+1587314351 d:\faculta\sem2\poolabteme\tema2\tema2\include\graf_neorientat.h
+	"Graf.h"
+	"Lista.h"
+
+1587308248 d:\faculta\sem2\poolabteme\tema2\tema2\include\graf_orientat.h
+	"Graf.h"
+	"Matrice.h"
+
+1587314351 source:d:\faculta\sem2\poolabteme\tema2\tema2\src\graf.cpp
+	"Graf.h"
+
+1587314351 source:d:\faculta\sem2\poolabteme\tema2\tema2\src\graf_neorientat.cpp
+	"Graf_Neorientat.h"
+	<queue>
+
+1587316356 source:d:\faculta\sem2\poolabteme\tema2\tema2\src\graf_orientat.cpp
+	"Graf_Orientat.h"
+	<queue>
+
+1587314646 source:d:\faculta\sem2\poolabteme\tema2\tema2\src\liniuta.cpp
+	"Liniuta.h"
+	"PesteLimite.h"
+
+1587314668 source:d:\faculta\sem2\poolabteme\tema2\tema2\src\lista.cpp
+	"Lista.h"
+	"PesteLimite.h"
+
+1587317291 source:d:\faculta\sem2\poolabteme\tema2\tema2\src\matrice.cpp
+	"Matrice.h"
+	"PesteLimite.h"
+
+1587311292 source:d:\faculta\sem2\poolabteme\tema2\tema2\src\pestelimite.cpp
+	"PesteLimite.h"
+	<string>
+
+1587311325 d:\faculta\sem2\poolabteme\tema2\tema2\include\pestelimite.h
+	<exception>
+
