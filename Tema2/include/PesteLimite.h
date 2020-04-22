@@ -7,6 +7,8 @@ class PesteLimite : public std::exception
 {
     public:
         PesteLimite(const int &, const int & = 0) noexcept;
+        PesteLimite(PesteLimite const &)noexcept;
+        PesteLimite & operator= (PesteLimite const &)noexcept;
         virtual ~PesteLimite();
         virtual const char* what() const noexcept;
 
