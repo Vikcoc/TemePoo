@@ -1,0 +1,27 @@
+#ifndef GT_H
+#define GT_H
+#include "Automobil.h"
+#include <vector>
+
+class GT : public virtual Automobil
+{
+    public:
+        GT(double = 0, double = 0, int = -1, int = 200, int = 300, std::vector<int> = std::vector<int>());
+        virtual ~GT() = default;
+
+        virtual std::string ToString() const;
+        virtual std::string GetDrum() const;
+
+        static GT stog(std::string);
+    protected:
+        const int putere;
+        const int autonomie;
+        const std::vector<int> asistenta_drum;
+
+        virtual void Afisare(std::ostream&) const;
+
+        static std::string GetADrum(int);
+        static int GiveADrum(std::string);
+};
+
+#endif // GT_H
