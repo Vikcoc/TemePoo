@@ -7,7 +7,10 @@ class Mini: public virtual Automobil
 {
     public:
         Mini(double = 0, double = 0, int = -1, double = 10, std::vector<int> = std::vector<int>());
+        Mini(const Mini&) = default;
         virtual ~Mini() = default;
+
+        virtual Mini& operator= (const Mini&) = default;
 
         virtual std::string ToString() const;
         virtual std::string GetParcare() const;

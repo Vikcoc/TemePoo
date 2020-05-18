@@ -7,7 +7,10 @@ class GT : public virtual Automobil
 {
     public:
         GT(double = 0, double = 0, int = -1, int = 200, int = 300, std::vector<int> = std::vector<int>());
+        GT(const GT&) = default;
         virtual ~GT() = default;
+
+        virtual GT& operator= (const GT&) = default;
 
         virtual std::string ToString() const;
         virtual std::string GetDrum() const;

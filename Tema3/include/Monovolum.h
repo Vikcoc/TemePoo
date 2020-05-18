@@ -6,7 +6,11 @@ class Monovolum : public Automobil
 {
     public:
         Monovolum(double = 0,double = 0, std::string = "2000 01 01");
+        Monovolum(const Monovolum&) = default;
         virtual ~Monovolum() = default;
+
+        virtual Monovolum& operator= (const Monovolum&) = default;
+
         virtual std::string DataFabricarii() const;
         virtual std::string ToString() const;
     protected:
