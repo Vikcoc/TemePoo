@@ -39,14 +39,18 @@
 		<Unit filename="include/GT.h" />
 		<Unit filename="include/Mini.h" />
 		<Unit filename="include/Monovolum.h" />
+		<Unit filename="include/frauda.h" />
 		<Unit filename="include/navem.h" />
+		<Unit filename="include/piraterie.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Automobil.cpp" />
 		<Unit filename="src/Famelie.cpp" />
 		<Unit filename="src/GT.cpp" />
 		<Unit filename="src/Mini.cpp" />
 		<Unit filename="src/Monovolum.cpp" />
+		<Unit filename="src/frauda.cpp" />
 		<Unit filename="src/navem.cpp" />
+		<Unit filename="src/piraterie.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
