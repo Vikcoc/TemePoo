@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1589641216 source:d:\faculta\sem2\poolabteme\tema3\tema3\main.cpp
+1589808339 source:d:\faculta\sem2\poolabteme\tema3\tema3\main.cpp
 	<iostream>
 	<vector>
 	"Mini.h"
@@ -8,19 +8,22 @@
 	<set>
 	"Monovolum.h"
 	"navem.h"
+	"piraterie.h"
+	"frauda.h"
 
-1589464290 source:d:\faculta\sem2\poolabteme\tema3\tema3\src\automobil.cpp
+1589806461 source:d:\faculta\sem2\poolabteme\tema3\tema3\src\automobil.cpp
 	"Automobil.h"
 
-1589551729 d:\faculta\sem2\poolabteme\tema3\tema3\include\automobil.h
+1589808740 d:\faculta\sem2\poolabteme\tema3\tema3\include\automobil.h
 	<string>
 	<fstream>
+	"piraterie.h"
 
 1589566149 source:d:\faculta\sem2\poolabteme\tema3\tema3\src\mini.cpp
 	"Mini.h"
 	<iostream>
 
-1589550861 d:\faculta\sem2\poolabteme\tema3\tema3\include\mini.h
+1589808818 d:\faculta\sem2\poolabteme\tema3\tema3\include\mini.h
 	"Automobil.h"
 	<vector>
 
@@ -28,26 +31,38 @@
 	"GT.h"
 	<iostream>
 
-1589550870 d:\faculta\sem2\poolabteme\tema3\tema3\include\gt.h
+1589808818 d:\faculta\sem2\poolabteme\tema3\tema3\include\gt.h
 	"Automobil.h"
 	<vector>
 
 1589566282 source:d:\faculta\sem2\poolabteme\tema3\tema3\src\famelie.cpp
 	"Famelie.h"
 
-1589566715 d:\faculta\sem2\poolabteme\tema3\tema3\include\famelie.h
+1589808818 d:\faculta\sem2\poolabteme\tema3\tema3\include\famelie.h
 	"Mini.h"
 	"GT.h"
 
 1589632617 source:d:\faculta\sem2\poolabteme\tema3\tema3\src\monovolum.cpp
 	"Monovolum.h"
 
-1589637393 d:\faculta\sem2\poolabteme\tema3\tema3\include\monovolum.h
+1589808818 d:\faculta\sem2\poolabteme\tema3\tema3\include\monovolum.h
 	"Automobil.h"
 
 1589641650 source:d:\faculta\sem2\poolabteme\tema3\tema3\src\navem.cpp
 	"navem.h"
 
 1589641572 d:\faculta\sem2\poolabteme\tema3\tema3\include\navem.h
+	<exception>
+
+1589806047 source:d:\faculta\sem2\poolabteme\tema3\tema3\src\piraterie.cpp
+	"piraterie.h"
+
+1589806710 d:\faculta\sem2\poolabteme\tema3\tema3\include\piraterie.h
+	<exception>
+
+1589807343 source:d:\faculta\sem2\poolabteme\tema3\tema3\src\frauda.cpp
+	"frauda.h"
+
+1589807332 d:\faculta\sem2\poolabteme\tema3\tema3\include\frauda.h
 	<exception>
 

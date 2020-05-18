@@ -38,3 +38,9 @@ std::ostream& operator << (std::ostream& g,const Automobil& x)
     x.Afisare(g);
     return g;
 }
+
+std::istream& operator >> (std::istream& f,const Automobil& x)
+{
+    throw piraterie();
+    return f;
+}

@@ -6,6 +6,8 @@
 #include <set>
 #include "Monovolum.h"
 #include "navem.h"
+#include "piraterie.h"
+#include "frauda.h"
 using namespace std;
 
 template <class T>
@@ -17,7 +19,10 @@ class Vanzare
     set<pair<T*,int>> stoc,vandute;
 public:
     Vanzare(set<pair<T*,int>> = set<pair<T*,int>>());
+    Vanzare(const Vanzare &);
     virtual ~Vanzare();
+    Vanzare& operator= (const Vanzare &);
+
     set<pair<T*,int>> Selectie();
     Vanzare& operator -=(pair<T*,int>);
     Vanzare& operator +=(pair<T*,int>);
@@ -31,6 +36,10 @@ Vanzare<T>::Vanzare(set<pair<T*,int>> masini):stoc(masini)
 {++praduitori;}
 
 template <class T>
+Vanzare<T>::Vanzare(const Vanzare<T>& x)
+{throw frauda();}
+
+template <class T>
 Vanzare<T>::~Vanzare()
 {
     for (auto x : stoc)
@@ -39,6 +48,10 @@ Vanzare<T>::~Vanzare()
         delete (x.first);
     --praduitori;
 }
+
+template <class T>
+Vanzare<T>& Vanzare<T>::operator= (const Vanzare<T>& x)
+{throw frauda();return *this;}
 
 template <class T>
 set<pair<T*,int>> Vanzare<T>::Selectie()
@@ -77,17 +90,24 @@ class Vanzare<Monovolum>
     std::string cand;
 public:
     Vanzare(set<pair<Monovolum*,bool>> = set<pair<Monovolum*,bool>>(), std::string = "2000 01 01");
+    Vanzare(const Vanzare<Monovolum>& );
     virtual ~Vanzare();
+    Vanzare& operator= (const Vanzare &);
+
     set<pair<Monovolum*,bool>> Selectie();
     Vanzare& operator -=(pair<Monovolum*,bool>);
     Vanzare& operator +=(pair<Monovolum*,bool>);
     int GivePret(pair<Monovolum*,bool>) const;
+
 };
 
 int Vanzare<Monovolum>::praduitori = 0;
 
 Vanzare<Monovolum>::Vanzare(set<pair<Monovolum*,bool>> masini, std::string data):stoc(masini), cand(data)
 {++praduitori;}
+
+Vanzare<Monovolum>::Vanzare(const Vanzare<Monovolum>& x)
+{throw frauda();}
 
 Vanzare<Monovolum>::~Vanzare()
 {
@@ -97,6 +117,9 @@ Vanzare<Monovolum>::~Vanzare()
         delete (x.first);
     --praduitori;
 }
+
+Vanzare<Monovolum>& Vanzare<Monovolum>::operator= (const Vanzare<Monovolum>& x)
+{throw frauda();return *this;}
 
 set<pair<Monovolum*,bool>> Vanzare<Monovolum>::Selectie()
 {
@@ -131,12 +154,18 @@ int Vanzare<Monovolum>::GivePret(pair<Monovolum*,bool> x) const
 
 int main()
 {
-    Vanzare<Monovolum> a(set<pair<Monovolum*,bool>>(),"2000 07 03");
-    a+={0,1};
-    a-={0,1};
-    Monovolum *b = new Monovolum();
-    a+={b,1};
-    cout<<a.GivePret({b,1});
+//    Vanzare<Monovolum> a(set<pair<Monovolum*,bool>>(),"2000 07 03");
+//    a+={0,1};
+//    a-={0,1};
+//    Monovolum *b = new Monovolum();
+//    cin>>*b;
+//    a+={b,1};
+//    cout<<a.GivePret({b,1});
 //    a-={0,0};
+//    Vanzare<Monovolum> a(set<pair<Monovolum*,bool>>(),"2000 07 03");
+//    Vanzare<Monovolum> b;
+//    b=a;
+//    GT a,b;
+//    b=a;
     return 0;
 }
