@@ -1,0 +1,17 @@
+Tema 7. Clasa ”Stiva_de_caractere” (implementata dinamic)
+Se considera Class Nod{ char info; Nod* next;}
+	- constructori de inițializare și parametrizati pentru clasa Nod;
+	- destructor pentru clasa Nod;
+	
+Clasa Stiva_de_caractere are:
+	- membru privat, un "Nod*" (varful stivei);
+    	- un constructor care initializeaza varful stivei cu NULL;
+    	- un destructor care dezaloca toate elementele stivei;
+- metode publice de adaugare a unui element în stiva (push), de stergere a unui element (pop), de afisare a varfului stivei (top) și pentru a testa daca stiva e vida (isempty);
+- metoda publica de fisarea stivei, concomitent cu golirea ei, realizata prin supraincarcarea operatorului <<;
+- supraincarcarea operatorului >>, realizata prin push-uri succesive;
+- metoda publica pentru inversarea unui sir de caractere folosind o stiva;
+- metoda publica, realizata prin supraincarcarea operatorului -, care sa considere doua stive și sa elimine, concomitent, elementele din ambele stive adaugand caracterul ce are codul ASCII mai mare într-o noua stiva, ca în exemplul de mai jos:
+
+Stiva_de_caractere S1,S2;
+S1 = {E,X,A,M,E,N}; S2 = {P,O,O,L,A,B,O,R,A,T,O,R}	S1 - S2 = {R,O,T,A,X,O}.
